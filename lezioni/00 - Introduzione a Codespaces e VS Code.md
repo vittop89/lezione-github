@@ -48,6 +48,19 @@ Puoi seguire le lezioni in due modi diversi. Scegli quello più adatto alla tua 
 
 ---
 
+### Differenze tra Codespaces e locale
+
+| Funzionalità | ☁️ Codespaces | 💻 VS Code locale |
+|---|---|---|
+| Installazione richiesta | ❌ No | ✅ Git + VS Code |
+| Funziona da qualsiasi PC | ✅ Sì | ❌ Solo sul tuo PC |
+| Funziona offline | ❌ No | ✅ Sì |
+| Git già configurato | ✅ Automatico | ⚙️ Manuale (una volta) |
+| Ore gratuite | 60 ore/mese | ♾️ Illimitate |
+| Velocità avvio | ~30 secondi | Istantaneo |
+
+---
+
 ## ☁️ Opzione A – GitHub Codespaces (nel browser, zero installazioni)
 
 ### Cos'è GitHub Codespaces
@@ -214,14 +227,14 @@ git config --global user.email "tua@email.com"
 
 Usa la stessa email del tuo account GitHub.
 
-### Usare un'interfaccia grafica invece del terminale
+## 🖱️ Usare un'interfaccia grafica invece del terminale
 
 Se preferisci evitare i comandi, hai due alternative grafiche:
 
-- **Source Control di VS Code / Codespaces** — l'icona del grafo 🔀 nella barra laterale sinistra, disponibile sia in VS Code locale che in Codespaces
+- **Source Control di VS Code / Codespaces** — l'icona dei branch (tre cerchi collegati) nella barra laterale sinistra, disponibile sia in VS Code locale che in Codespaces
 - **GitHub Desktop** — app separata, solo per VS Code locale (non funziona in Codespaces)
 
-| Operazione | Comando terminale | 🔀 Source Control (VS Code / Codespaces) | 🖥️ GitHub Desktop |
+| Operazione | Comando terminale | 🖱️ Source Control (VS Code / Codespaces) | 🖥️ GitHub Desktop |
 |---|---|---|---|
 | Vedere modifiche | `git status` | Pannello "Source Control" — lista file modificati | Scheda "Changes" |
 | Aggiungere file | `git add .` | Clicca `+` accanto al file oppure "Stage All Changes" | Seleziona i file nella lista |
@@ -230,19 +243,6 @@ Se preferisci evitare i comandi, hai due alternative grafiche:
 | Scaricare | `git pull` | Clicca **Sync Changes** | Clicca "Fetch origin" |
 
 > 💡 **Consiglio:** in Codespaces usa sempre la Source Control integrata — GitHub Desktop non è disponibile nel browser.
-
----
-
-## 🔄 Differenze tra Codespaces e locale
-
-| Funzionalità | ☁️ Codespaces | 💻 VS Code locale |
-|---|---|---|
-| Installazione richiesta | ❌ No | ✅ Git + VS Code |
-| Funziona da qualsiasi PC | ✅ Sì | ❌ Solo sul tuo PC |
-| Funziona offline | ❌ No | ✅ Sì |
-| Git già configurato | ✅ Automatico | ⚙️ Manuale (una volta) |
-| Ore gratuite | 60 ore/mese | ♾️ Illimitate |
-| Velocità avvio | ~30 secondi | Istantaneo |
 
 ---
 
