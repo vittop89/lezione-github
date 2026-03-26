@@ -238,5 +238,5 @@ Dalla prossima lezione iniziamo a usare Git per davvero!
 
 ---
 
-**Lezione precedente:** [Lezione 1 — Cos'è Git e GitHub?](Lezione%201%20—%20Cos'è%20Git%20e%20GitHub%3F.md)
-**Prossima lezione:** [Lezione 3 — Il primo repository](03-primo-repository.md)
+**Lezione precedente:** [01 - Cos'è Git e GitHub?](01%20-%20Cos'è%20Git%20e%20GitHub%3F.md)
+**Prossima lezione:** [03 - Il primo repository](03%20-%20primo%20repository%20e%20primi%20commit.md)
