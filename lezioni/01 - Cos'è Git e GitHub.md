@@ -5,7 +5,7 @@
 ---
 
 ## Parte 1 — Il problema (10 min)
-
+ 
 Immagina di scrivere una tesina con un compagno. Vi scambiate il file per email:
 
 ```
