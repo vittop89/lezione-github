@@ -2,7 +2,7 @@
 
 **Durata:** 1 ora
 **Obiettivo:** Capire perché esistono Git e GitHub, creare il proprio account GitHub e familiarizzare con l'interfaccia.
-
+ 
 ---
 
 ## Parte 1 — Il problema (10 min)
