@@ -4,7 +4,7 @@
 **Obiettivo:** Capire perché esistono Git e GitHub, creare il proprio account GitHub e familiarizzare con l'interfaccia.
  
 ---
-
+ds
 ## Parte 1 — Il problema (10 min)
 
 Immagina di scrivere una tesina con un compagno. Vi scambiate il file per email:
