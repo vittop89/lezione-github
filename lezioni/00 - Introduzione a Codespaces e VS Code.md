@@ -35,7 +35,7 @@ Per seguire le lezioni hai bisogno di una **tua copia personale** del repository
 
 ---
 
-## 🖥️ Quale ambiente scegliere?
+## 🖥️ Quale ambiente scegliere? 
 
 Puoi seguire le lezioni in due modi diversi. Scegli quello più adatto alla tua situazione:
 
