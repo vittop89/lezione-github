@@ -1,7 +1,19 @@
-# Lezione 6 — Collaborazione e Pull Request
+# Lezione 6 – Collaborazione e Pull Request
 
 **Durata:** 1 ora
-**Obiettivo:** Imparare a collaborare con i compagni usando fork, clone e pull request su GitHub.
+**Obiettivo:** Imparare a collaborare con i compagni usando fork, branch e pull request su GitHub.
+
+---
+
+> ## 🖥️ Apri il terminale nel tuo ambiente
+>
+> | Ambiente | Dove lavorare |
+> |----------|---------------|
+> | ☁️ **Codespaces** | Apri un Codespace sul **tuo fork** del repo del compagno |
+> | 💻 **VS Code locale** | Clona il **tuo fork** e aprilo in VS Code |
+> | 🖥️ **GitHub Desktop** | File → Clone Repository → scegli il tuo fork |
+>
+> 📌 In questa lezione il punto di partenza è sempre il **fork**, non il repo originale.
 
 ---
 
@@ -230,5 +242,5 @@ Oggi hai imparato a:
 
 ---
 
-**Lezione precedente:** [05 - Branch e merge](05%20-%20Branch%20e%20merge.md)
-**Prossima lezione:** [07 - Issues, Projects e lavoro di gruppo](07%20-%20Issues%2C%20Projects%20e%20lavoro%20di%20gruppo.md)
+**Lezione precedente:** [Lezione 05 — Branch e merge](05%20-%20Branch%20e%20merge.md)
+**Prossima lezione:** [Lezione 07 — Issues, Projects e lavoro di gruppo](07%20-%20Issues%2C%20Projects%20e%20lavoro%20di%20gruppo.md)

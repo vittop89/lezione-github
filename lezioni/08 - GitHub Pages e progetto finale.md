@@ -431,7 +431,7 @@ Ogni commit che fai, ogni progetto che crei, ogni contributo che dai resta visib
 
 ---
 
-**Lezione precedente:** [07 - Issues, Projects e lavoro di gruppo](07%20-%20Issues%2C%20Projects%20e%20lavoro%20di%20gruppo.md)
+**Lezione precedente:** [Lezione 07 — Issues, Projects e lavoro di gruppo](07%20-%20Issues%2C%20Projects%20e%20lavoro%20di%20gruppo.md)
 
 ---
 

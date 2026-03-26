@@ -1,7 +1,19 @@
-# Lezione 5 — Branch e merge
+# Lezione 5 – Branch e merge
 
 **Durata:** 1 ora
 **Obiettivo:** Capire cosa sono i branch, crearli, spostarsi tra di essi, e fare il merge per unire le modifiche.
+
+---
+
+> ## 🖥️ Apri il terminale nel tuo ambiente
+>
+> | Ambiente | Come aprire |
+> |----------|-------------|
+> | ☁️ **Codespaces** | `Ctrl + `` ` — già nella cartella del progetto |
+> | 💻 **VS Code locale** | `Ctrl + `` ` — già nella cartella se hai aperto il progetto corretto |
+> | 🖥️ **GitHub Desktop** | I branch si gestiscono anche graficamente dalla barra in alto → "Current Branch" |
+>
+> 💡 **GitHub Desktop** mostra i branch in modo visuale: clicca "Current Branch" per creare, cambiare o fare merge di branch senza usare il terminale.
 
 ---
 
@@ -351,5 +363,5 @@ Oggi hai imparato a:
 
 ---
 
-**Lezione precedente:** [04 - Lavorare con i file e la storia](04%20-%20Lavorare%20con%20i%20file%20e%20la%20storia.md)
-**Prossima lezione:** [06 - Collaborazione e Pull Request](06%20-%20Collaborazione%20e%20Pull%20Request.md)
+**Lezione precedente:** [Lezione 04 — Lavorare con i file e la storia](04%20-%20Lavorare%20con%20i%20file%20e%20la%20storia.md)
+**Prossima lezione:** [Lezione 06 — Collaborazione e Pull Request](06%20-%20Collaborazione%20e%20Pull%20Request.md)

@@ -1,6 +1,17 @@
-# Lezione 4 — Lavorare con i file e la storia
+# Lezione 4 – Lavorare con i file e la storia
 
-**Durata:** 1 ora **Obiettivo:** Imparare a gestire le modifiche ai file, consultare la storia del progetto e usare `.gitignore`.
+**Durata:** 1 ora
+**Obiettivo:** Imparare a gestire le modifiche ai file, consultare la storia del progetto e usare `.gitignore`.
+
+---
+
+> ## 🖥️ Apri il terminale nel tuo ambiente
+>
+> | Ambiente | Come aprire il terminale |
+> |----------|--------------------------|
+> | ☁️ **Codespaces** | `Ctrl + `` ` — sei già nella cartella del progetto |
+> | 💻 **VS Code locale** | `Ctrl + `` ` — assicurati di essere nella cartella giusta con `pwd` |
+> | 🖥️ **GitHub Desktop** | Repository → Open in Git Bash |
 
 ---
 
@@ -19,6 +30,7 @@ git status
 ```
 
 Se tutto è in ordine, vedrai `On branch main` e nessuna modifica pendente.
+
 
 ## Parte 2 — Vedere le differenze con `git diff` (10 min)
 
@@ -63,6 +75,7 @@ git add README.md
 git commit -m "Aggiunta sezione autore al README"
 ```
 
+
 ## Parte 3 — Esplorare la storia con `git log` (10 min)
 
 La storia del progetto è uno dei superpoteri di Git. Vediamo come esplorarla.
@@ -100,6 +113,7 @@ git show abc1234
 ```
 
 Vedrai esattamente quali file sono stati modificati e come.
+
 
 ## Parte 4 — Annullare le modifiche (15 min)
 
@@ -178,16 +192,16 @@ Vedrai sia il commit sbagliato che il commit di "annullamento". La storia è pre
 
 ### Tabella riassuntiva
 
-| Situazione                               | Comando                         |
-| ---------------------------------------- | ------------------------------- |
-| File modificato, non aggiunto allo stage | `git checkout -- nomefile`      |
+| Situazione | Comando |
+|-----------|---------|
+| File modificato, non aggiunto allo stage | `git checkout -- nomefile` |
 | File aggiunto allo stage, non committato | `git restore --staged nomefile` |
-| Commit già fatto, vuoi annullarlo        | `git revert HEAD`               |
+| Commit già fatto, vuoi annullarlo | `git revert HEAD` |
+
 
 ## Parte 5 — Il file `.gitignore` (10 min)
 
 Non tutti i file devono essere tracciati da Git. Ad esempio:
-
 - File temporanei del sistema (`.DS_Store` su Mac, `Thumbs.db` su Windows)
 - File con password o dati sensibili
 - Cartelle generate automaticamente (come `node_modules` nei progetti web)
@@ -230,13 +244,14 @@ git commit -m "Aggiunto .gitignore per escludere file temporanei e di sistema"
 
 ### Sintassi di `.gitignore`
 
-| Pattern           | Cosa ignora                                   |
-| ----------------- | --------------------------------------------- |
-| `*.log`           | Tutti i file che finiscono con `.log`         |
-| `temp/`           | L'intera cartella `temp` e il suo contenuto   |
-| `segreto.txt`     | Uno specifico file chiamato `segreto.txt`     |
+| Pattern | Cosa ignora |
+|---------|------------|
+| `*.log` | Tutti i file che finiscono con `.log` |
+| `temp/` | L'intera cartella `temp` e il suo contenuto |
+| `segreto.txt` | Uno specifico file chiamato `segreto.txt` |
 | `!importante.log` | **NON** ignorare `importante.log` (eccezione) |
-| `docs/*.pdf`      | I file PDF solo nella cartella `docs`         |
+| `docs/*.pdf` | I file PDF solo nella cartella `docs` |
+
 
 ## Parte 6 — Esercizio finale e push (10 min)
 
@@ -270,6 +285,7 @@ git restore --staged nomefile  # Rimuovi un file dallo stage
 git revert HEAD                # Annulla l'ultimo commit (creandone uno nuovo)
 ```
 
+
 ## Riepilogo
 
 Oggi hai imparato a:
@@ -281,5 +297,5 @@ Oggi hai imparato a:
 
 ---
 
-**Lezione precedente:** [03 - Il primo repository](03%20-%20primo%20repository%20e%20primi%20commit.md)
-**Prossima lezione:** [05 - Branch e merge](05%20-%20Branch%20e%20merge.md)
+**Lezione precedente:** [Lezione 03 — Il primo repository](03%20-%20primo%20repository%20e%20primi%20commit.md)
+**Prossima lezione:** [Lezione 05 — Branch e merge](05%20-%20Branch%20e%20merge.md)

@@ -1,11 +1,12 @@
 # Lezione 1 — Cos'è Git e GitHub?
 
-**Durata:** 1 ora **Obiettivo:** Capire perché esistono Git e GitHub, creare il proprio account GitHub e familiarizzare con l'interfaccia.
+**Durata:** 1 ora
+**Obiettivo:** Capire perché esistono Git e GitHub, creare il proprio account GitHub e familiarizzare con l'interfaccia.
 
 ---
 
 ## Parte 1 — Il problema (10 min)
- 
+
 Immagina di scrivere una tesina con un compagno. Vi scambiate il file per email:
 
 ```
@@ -20,11 +21,12 @@ Vi è mai successo? Questo caos nasce perché non avete un sistema per **tenere 
 
 **Git** e **GitHub** risolvono esattamente questo problema — non solo per documenti, ma soprattutto per il codice.
 
+
 ## Parte 2 — Cos'è Git? (10 min)
 
 **Git** è un programma che installi sul tuo computer. Serve a:
 
-1. **Salvare "istantanee"** (chiamate _commit_) del tuo progetto in momenti precisi.
+1. **Salvare "istantanee"** (chiamate *commit*) del tuo progetto in momenti precisi.
 2. **Tornare indietro** a qualsiasi versione precedente se qualcosa va storto.
 3. **Lavorare in parallelo** su funzionalità diverse senza creare conflitti.
 
@@ -32,11 +34,12 @@ Pensa a Git come alla funzione "Cronologia versioni" di Google Docs, ma molto pi
 
 ### Vocabolario essenziale
 
-| Termine               | Significato                                                      |
-| --------------------- | ---------------------------------------------------------------- |
-| **Repository (repo)** | La cartella del tuo progetto gestita da Git                      |
-| **Commit**            | Un'istantanea salvata del progetto in un momento preciso         |
-| **Branch**            | Una "linea parallela" di sviluppo (ne parleremo nella Lezione 5) |
+| Termine | Significato |
+|---------|------------|
+| **Repository (repo)** | La cartella del tuo progetto gestita da Git |
+| **Commit** | Un'istantanea salvata del progetto in un momento preciso |
+| **Branch** | Una "linea parallela" di sviluppo (ne parleremo nella Lezione 5) |
+
 
 ## Parte 3 — Cos'è GitHub? (10 min)
 
@@ -48,45 +51,28 @@ Pensa a Git come alla funzione "Cronologia versioni" di Google Docs, ma molto pi
 
 ### Git vs GitHub — non confonderli!
 
-| Git                    | GitHub                                                |
-| ---------------------- | ----------------------------------------------------- |
-| Programma sul tuo PC   | Sito web                                              |
-| Funziona offline       | Serve connessione internet                            |
-| Gestisce le versioni   | Ospita il codice e facilita la collaborazione         |
+| Git | GitHub |
+|-----|--------|
+| Programma sul tuo PC | Sito web |
+| Funziona offline | Serve connessione internet |
+| Gestisce le versioni | Ospita il codice e facilita la collaborazione |
 | Gratuito e open source | Gratuito per uso base, a pagamento per funzioni extra |
 
 **Analogia:** Git è come il motore di un'auto, GitHub è la strada su cui guidi. Puoi avere il motore senza la strada (Git senza GitHub), ma insieme funzionano molto meglio.
 
-## Parte 4 — Esercizio pratico: crea il tuo account GitHub (15 min)
 
-Segui questi passaggi uno alla volta.
+## Parte 4 — Il tuo account GitHub
 
-### Passo 1 — Vai su GitHub
+> ✅ Se hai seguito la **Lezione 00**, hai già creato il tuo account GitHub. Puoi passare direttamente alla Parte 5.
+>
+> Se invece stai leggendo questa lezione per prima, torna alla [Lezione 00](00%20-%20Introduzione%20a%20Codespaces%20e%20VS%20Code.md) e segui il "Passo 0" per creare l'account.
 
-Apri il browser e vai su **https://github.com**
+Una volta dentro, completa il profilo se non l'hai già fatto:
 
-### Passo 2 — Clicca "Sign up"
-
-Troverai il pulsante in alto a destra.
-
-### Passo 3 — Compila i dati
-
-- **Email:** usa la tua email personale (o quella scolastica se preferisci).
-- **Password:** scegli una password sicura (almeno 8 caratteri, con numeri e lettere).
-- **Username:** scegli un nome utente che ti rappresenti. Sarà pubblico!
-  - Buone idee: `mario-rossi`, `mrossi2010`, `marco-dev`
-  - Da evitare: `xXx_killer_xXx`, nomi offensivi o troppo lunghi
-
-### Passo 4 — Verifica l'email
-
-GitHub ti invierà un'email di conferma. Apri la tua casella di posta e clicca il link di verifica.
-
-### Passo 5 — Completa il profilo
-
-Una volta dentro, clicca sulla tua icona in alto a destra e vai su **Settings > Profile**:
-
+Clicca sulla tua icona in alto a destra e vai su **Settings > Profile**:
 - Aggiungi una foto (o un avatar).
-- Scrivi una breve bio, ad esempio: _"Studente di liceo scientifico, appassionato di informatica"_.
+- Scrivi una breve bio, ad esempio: *"Studente di liceo scientifico, appassionato di informatica"*.
+
 
 ## Parte 5 — Esplora GitHub (10 min)
 
@@ -113,6 +99,7 @@ Rispondi sul tuo quaderno o in un file di testo:
 2. Quando è stato fatto l'ultimo aggiornamento (ultimo commit)?
 3. Secondo te, come fanno migliaia di persone a lavorare sullo stesso progetto senza creare caos?
 
+
 ## Parte 6 — Riepilogo (5 min)
 
 Oggi hai imparato che:
@@ -128,7 +115,8 @@ Nella Lezione 2 installeremo Git sul computer e lo configureremo. Se vuoi portar
 - **Windows:** scarica Git da https://git-scm.com/download/win
 - **macOS:** scarica Git da https://git-scm.com/download/mac
 - **Linux:** apri il terminale e scrivi `sudo apt install git`
- 
+
 ---
 
-**Prossima lezione:** [02 - Installare e configurare Git](02%20-%20Installare%20e%20configurare%20Git.md)
+**Lezione precedente:** [Lezione 00 – Scegliere l'ambiente](00%20-%20Introduzione%20a%20Codespaces%20e%20VS%20Code.md)
+**Prossima lezione:** [Lezione 02 — Installare e configurare Git](02%20-%20Installare%20e%20configurare%20Git.md)

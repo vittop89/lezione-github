@@ -5,6 +5,18 @@
 
 ---
 
+> ## 🖥️ Apri il terminale nel tuo ambiente
+>
+> | Ambiente | Come aprire |
+> |----------|-------------|
+> | ☁️ **Codespaces** | `Ctrl + `` ` — già nella cartella del progetto |
+> | 💻 **VS Code locale** | `Ctrl + `` ` — assicurati di essere nella cartella giusta con `pwd` |
+> | 🖥️ **GitHub Desktop** | Repository → Open in Git Bash |
+>
+> 💡 In questa lezione lavorerai principalmente nell'interfaccia web di GitHub, ma avrai bisogno del terminale per i commit.
+
+---
+
 ## Parte 1 — Le Issues: il sistema di segnalazioni (15 min)
 
 Le **Issues** sono lo strumento di GitHub per gestire:
@@ -250,5 +262,5 @@ Oggi hai imparato a:
 
 ---
 
-**Lezione precedente:** [06 - Collaborazione e Pull Request](06%20-%20Collaborazione%20e%20Pull%20Request.md)
-**Prossima lezione:** [08 - GitHub Pages e progetto finale](08%20-%20GitHub%20Pages%20e%20progetto%20finale.md)
+**Lezione precedente:** [Lezione 06 — Collaborazione e Pull Request](06%20-%20Collaborazione%20e%20Pull%20Request.md)
+**Prossima lezione:** [Lezione 08 — GitHub Pages e progetto finale](08%20-%20GitHub%20Pages%20e%20progetto%20finale.md)
