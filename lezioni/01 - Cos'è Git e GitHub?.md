@@ -131,4 +131,4 @@ Nella Lezione 2 installeremo Git sul computer e lo configureremo. Se vuoi portar
 
 ---
 
-**Prossima lezione:** [Lezione 2 — Installare e configurare Git](Lezione%202%20—%20Installare%20e%20configurare%20Git.md)
+**Prossima lezione:** [02 - Installare e configurare Git](lezioni/02%20-%20Installare%20e%20configurare%20Git.md)
