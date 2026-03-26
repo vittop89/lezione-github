@@ -10,7 +10,7 @@ Ogni lezione dura circa **1 ora** ed e' strutturata come una guida step-by-step 
 
 | # | Lezione | Argomenti |
 |---|---------|-----------|
-| 1 | [Cos'e' Git e GitHub?](lezioni/01-cos-e-git-e-github.md) | Introduzione ai concetti base, creazione account GitHub, esplorazione della piattaforma |
+| 1 | [Cos'e' Git e GitHub?](lezioni/Lezione%201%20—%20Cos'è%20Git%20e%20GitHub%3F.md) | Introduzione ai concetti base, creazione account GitHub, esplorazione della piattaforma |
 | 2 | [Installare e configurare Git](lezioni/02-installazione-e-configurazione.md) | Terminale, installazione Git (Windows/Mac/Linux), configurazione nome/email, chiave SSH |
 | 3 | [Il primo repository e i primi commit](lezioni/03-primo-repository.md) | `git init`, `git add`, `git commit`, `git push`, pubblicazione su GitHub |
 | 4 | [Lavorare con i file e la storia](lezioni/04-file-e-storia.md) | `git diff`, `git log`, annullare modifiche, `.gitignore` |
