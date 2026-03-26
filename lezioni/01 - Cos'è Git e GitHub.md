@@ -60,6 +60,8 @@ Pensa a Git come alla funzione "Cronologia versioni" di Google Docs, ma molto pi
 
 **Analogia:** Git è come il motore di un'auto, GitHub è la strada su cui guidi. Puoi avere il motore senza la strada (Git senza GitHub), ma insieme funzionano molto meglio.
 
+![Schema Git vs GitHub](assets/01-git-vs-github.svg)
+
 
 ## Parte 4 — Il tuo account GitHub
 

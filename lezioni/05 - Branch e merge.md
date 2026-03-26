@@ -38,6 +38,8 @@ feature:                   D --- E --
 
 In questo schema, i commit D ed E sono stati fatti sul branch `feature` senza toccare `main`. Il commit F è il **merge**: le modifiche di `feature` vengono unite a `main`.
 
+![Flusso branch: Create → Commit → Pull Request → Merge](assets/05-branch-workflow.svg)
+
 ### Perché usare i branch?
 
 - Puoi **sperimentare** senza paura di rompere il progetto.
@@ -245,30 +247,48 @@ A volte due branch modificano le **stesse righe** dello stesso file. Quando prov
 
 ### Passo 1 — Crea la situazione di conflitto
 
+Dobbiamo fare in modo che due branch modifichino la **stessa riga** dello stesso file. Lo facciamo creando prima il branch, poi facendo modifiche diverse sui due branch:
+
 ```bash
 # Assicurati di essere su main
 git checkout main
 
-# Modifica la prima riga di chi-sono.txt
-echo "Nome: [Il tuo nome] - Studente di liceo" > chi-sono-temp.txt
-cat chi-sono.txt >> chi-sono-temp.txt
-mv chi-sono-temp.txt chi-sono.txt
-git add chi-sono.txt
-git commit -m "Aggiornato il nome con il ruolo su main"
+# Crea il branch su cui farai una modifica diversa
+git checkout -b modifica-nome
 ```
 
-Ora crea un branch dove modifichi la stessa riga in modo diverso:
+Ora sei su `modifica-nome`. Apri `chi-sono.txt` con VS Code e cambia la prima riga da:
+```
+Nome: [Il tuo nome]
+```
+in:
+```
+Nome: [Il tuo nome] - Futuro programmatore
+```
+
+Salva il file e fai il commit:
 
 ```bash
-# Torna al commit precedente per creare il branch
-git checkout -b modifica-nome HEAD~1
-
-# Modifica la stessa riga in modo diverso
-echo "Nome: [Il tuo nome] - Futuro programmatore" > chi-sono-temp.txt
-cat chi-sono.txt >> chi-sono-temp.txt
-mv chi-sono-temp.txt chi-sono.txt
 git add chi-sono.txt
 git commit -m "Aggiornato il nome con l'aspirazione su modifica-nome"
+```
+
+Ora torna su `main` e fai una modifica **diversa** alla stessa riga:
+
+```bash
+git checkout main
+```
+
+Apri di nuovo `chi-sono.txt` e cambia la prima riga in:
+```
+Nome: [Il tuo nome] - Studente di liceo
+```
+
+Salva e fai il commit:
+
+```bash
+git add chi-sono.txt
+git commit -m "Aggiornato il nome con il ruolo su main"
 ```
 
 ### Passo 2 — Prova il merge

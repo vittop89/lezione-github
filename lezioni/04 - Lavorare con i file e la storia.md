@@ -136,7 +136,7 @@ git diff
 Per annullare e tornare alla versione dell'ultimo commit:
 
 ```bash
-git checkout -- README.md
+git restore README.md
 ```
 
 Controlla: la riga sbagliata è sparita!
@@ -161,7 +161,7 @@ git restore --staged README.md
 Ora il file è di nuovo "modificato ma non staged". Se vuoi annullare anche le modifiche:
 
 ```bash
-git checkout -- README.md
+git restore README.md
 ```
 
 ### Caso 3: hai fatto il commit ma vuoi tornare indietro
@@ -194,7 +194,7 @@ Vedrai sia il commit sbagliato che il commit di "annullamento". La storia è pre
 
 | Situazione | Comando |
 |-----------|---------|
-| File modificato, non aggiunto allo stage | `git checkout -- nomefile` |
+| File modificato, non aggiunto allo stage | `git restore nomefile` |
 | File aggiunto allo stage, non committato | `git restore --staged nomefile` |
 | Commit già fatto, vuoi annullarlo | `git revert HEAD` |
 
@@ -280,7 +280,7 @@ git diff                       # Vedi le modifiche non ancora in stage
 git diff --staged              # Vedi le modifiche in stage
 git log --oneline              # Storia compatta dei commit
 git show HASH                  # Dettagli di un commit specifico
-git checkout -- nomefile       # Annulla modifiche non in stage
+git restore nomefile           # Annulla modifiche non in stage
 git restore --staged nomefile  # Rimuovi un file dallo stage
 git revert HEAD                # Annulla l'ultimo commit (creandone uno nuovo)
 ```

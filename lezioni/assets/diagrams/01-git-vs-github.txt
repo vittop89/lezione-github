@@ -1,0 +1,36 @@
+<mxGraphModel dx="1545" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="L1" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;startSize=40;dashed=1;collapsible=0;container=1;fontStyle=1;fontSize=14;" value="IL TUO COMPUTER&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;LATO LOCALE - GIT&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+      <mxGeometry height="200" width="300" x="60" y="130" as="geometry" />
+    </mxCell>
+    <mxCell id="L4" parent="L1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#1b5e20;" value="LOCAL REPOSITORY&lt;br&gt;(tutti i commit)&lt;br&gt;&lt;font style=&quot;color: light-dark(rgb(102, 102, 102), rgb(230, 208, 222));&quot;&gt;git log --oneline&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="200" x="50" y="70" as="geometry" />
+    </mxCell>
+    <mxCell id="R1" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;startSize=30;dashed=1;collapsible=0;fontStyle=1;fontSize=14;" value="GITHUB (LATO CLOUD - REMOTO)" vertex="1">
+      <mxGeometry height="200" width="320" x="600" y="130" as="geometry" />
+    </mxCell>
+    <mxCell id="R2" parent="R1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;" value="REMOTE REPOSITORY&lt;br&gt;(origin/main)&lt;br&gt;&lt;font style=&quot;color: light-dark(rgb(102, 102, 102), rgb(230, 208, 222));&quot;&gt;git remote -v&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="200" x="60" y="70" as="geometry" />
+    </mxCell>
+    <mxCell id="F1" edge="1" parent="1" source="L4" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.25;entryX=0;entryY=0.25;strokeColor=#2D7600;strokeWidth=3;fontColor=#2D7600;fontStyle=1;" target="R2" value="git push origin main">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="F2" edge="1" parent="1" source="R2" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.75;entryX=1;entryY=0.75;strokeColor=#0050ef;strokeWidth=3;fontColor=#0050ef;fontStyle=1;" target="L4" value="git pull origin main">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="F3" edge="1" parent="1" source="R1" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=0;strokeColor=#666666;dashed=1;strokeWidth=2;fontStyle=2;" target="L1" value="git clone ... (Prima volta)">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="760" y="60" />
+          <mxPoint x="210" y="60" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+  </root>
+</mxGraphModel>

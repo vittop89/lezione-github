@@ -38,13 +38,70 @@ Cosa puoi pubblicare con GitHub Pages:
 
 ```bash
 cd ~/progetti-github
-git clone git@github.com:TUO-USERNAME/il-mio-sito.git
+git clone https://github.com/TUO-USERNAME/il-mio-sito.git
 cd il-mio-sito
 ```
 
-### Passo 3 — Crea la homepage
+### Passo 3 — Crea il foglio di stile condiviso
 
-Crea il file `index.html`. Questo sarà la pagina principale del tuo sito:
+Invece di copiare il CSS in ogni pagina, creiamo **un solo file** `style.css` che tutte le pagine condivideranno. Questo è il modo corretto di organizzare un sito web.
+
+```bash
+cat > style.css << 'FINE'
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h1 { margin: 0; }
+.subtitle { color: #bdc3c7; margin-top: 10px; }
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card h2 { color: #2c3e50; }
+a { color: #3498db; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #7f8c8d;
+}
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tag {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    margin: 2px;
+}
+FINE
+```
+
+### Passo 4 — Crea la homepage
 
 ```bash
 cat > index.html << 'FINE'
@@ -54,49 +111,7 @@ cat > index.html << 'FINE'
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il Mio Sito</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        h1 { margin: 0; }
-        .subtitle { color: #bdc3c7; margin-top: 10px; }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .card h2 { color: #2c3e50; }
-        a { color: #3498db; }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #7f8c8d;
-        }
-        nav {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -136,7 +151,7 @@ cat > index.html << 'FINE'
 FINE
 ```
 
-### Passo 4 — Crea la pagina "Chi Sono"
+### Passo 5 — Crea la pagina "Chi Sono"
 
 ```bash
 cat > chi-sono.html << 'FINE'
@@ -146,42 +161,7 @@ cat > chi-sono.html << 'FINE'
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi Sono</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .card h2 { color: #2c3e50; }
-        a { color: #3498db; }
-        nav {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -213,7 +193,7 @@ cat > chi-sono.html << 'FINE'
 FINE
 ```
 
-### Passo 5 — Crea la pagina "Progetti"
+### Passo 6 — Crea la pagina "Progetti"
 
 ```bash
 cat > progetti.html << 'FINE'
@@ -223,51 +203,7 @@ cat > progetti.html << 'FINE'
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Miei Progetti</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .card h2 { color: #2c3e50; }
-        a { color: #3498db; }
-        nav {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .tag {
-            display: inline-block;
-            background: #3498db;
-            color: white;
-            padding: 3px 10px;
-            border-radius: 15px;
-            font-size: 0.85em;
-            margin: 2px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -304,15 +240,15 @@ cat > progetti.html << 'FINE'
 FINE
 ```
 
-### Passo 6 — Commit e push
+### Passo 7 — Commit e push
 
 ```bash
 git add .
-git commit -m "Creato sito web con homepage, chi-sono e progetti"
+git commit -m "Creato sito web con homepage, chi-sono, progetti e style.css"
 git push
 ```
 
-### Passo 7 — Attiva GitHub Pages
+### Passo 8 — Attiva GitHub Pages
 
 1. Vai sul repository `il-mio-sito` su GitHub.
 2. Clicca **Settings** (icona ingranaggio).
@@ -344,9 +280,11 @@ Ora che il sito funziona, personalizzalo. Lavora usando il flusso che hai impara
 
 2. Modifica i file HTML sostituendo i segnaposto `[Il tuo nome]`, `[La tua classe]`, ecc. con le tue informazioni reali.
 
-3. Cambia i colori! Nel CSS, prova a modificare:
+3. Cambia i colori! Apri `style.css` e modifica:
    - `background-color` nell'header (prova `#e74c3c` per rosso, `#27ae60` per verde, `#8e44ad` per viola)
    - `color` dei link
+
+   Modificando un solo file cambierai l'aspetto di tutto il sito.
 
 4. Aggiungi contenuti alle pagine.
 
@@ -395,7 +333,7 @@ Creare un **sito web della classe** pubblicato con GitHub Pages.
 ### Suggerimenti
 
 - Partite dal template HTML di questa lezione e modificatelo.
-- Usate lo stesso stile CSS per tutte le pagine (copiate il blocco `<style>`).
+- Usate un solo file `style.css` condiviso per tutte le pagine — modificate quello per cambiare il look dell'intero sito in un colpo solo.
 - Fate commit piccoli e frequenti con messaggi chiari.
 - Comunicate tramite le Issues e i commenti delle Pull Request.
 
@@ -404,18 +342,25 @@ Creare un **sito web della classe** pubblicato con GitHub Pages.
 
 Complimenti! In 8 lezioni hai imparato tutto il necessario per usare Git e GitHub come un professionista.
 
+### Mappa completa di Git e GitHub
+
+Tutto quello che hai imparato in queste 8 lezioni, in un unico schema:
+
+![Mappa completa Git e GitHub](assets/08-mappa-completa.svg)
+
 ### Cosa sai fare ora
 
 | Lezione | Competenza |
 |---------|-----------|
-| 1 | Sai cos'e' Git e GitHub e hai un account |
-| 2 | Hai installato e configurato Git |
-| 3 | Sai creare repository, fare commit e push |
-| 4 | Sai gestire le modifiche, la storia e il .gitignore |
-| 5 | Sai usare i branch e risolvere i conflitti |
-| 6 | Sai collaborare con fork e pull request |
-| 7 | Sai organizzare il lavoro con Issues e Projects |
-| 8 | Sai pubblicare un sito con GitHub Pages |
+| 00 | Hai scelto il tuo ambiente (Codespaces o VS Code) e fatto il fork del repository |
+| 01 | Sai cos'e' Git e GitHub e hai un account |
+| 02 | Hai installato e configurato Git |
+| 03 | Sai creare repository, fare commit e push |
+| 04 | Sai gestire le modifiche, la storia e il .gitignore |
+| 05 | Sai usare i branch e risolvere i conflitti |
+| 06 | Sai collaborare con fork e pull request |
+| 07 | Sai organizzare il lavoro con Issues e Projects |
+| 08 | Sai pubblicare un sito con GitHub Pages |
 
 ### Come continuare
 

@@ -36,6 +36,8 @@ In questa lezione usiamo il **Metodo 2**, perché è quello usato dalla maggior 
 
 Il **fork** è una copia completa di un repository altrui nel tuo account GitHub. Puoi modificarla liberamente senza toccare l'originale.
 
+> 💡 Hai già fatto questa operazione nella Lezione 00, quando hai copiato il repository delle lezioni. Il procedimento è identico: questa volta lo farai sul progetto di un compagno.
+
 ### Esercizio: fai il fork del repo di un compagno
 
 Per questo esercizio, lavorerai in coppia con un compagno. Uno di voi sarà il "proprietario" e l'altro il "collaboratore". Poi vi scambierete i ruoli.
@@ -65,7 +67,7 @@ Noterai la scritta "forked from compagno-username/il-mio-primo-repo" sotto il no
 ```bash
 cd ~/progetti-github
 
-git clone git@github.com:TUO-USERNAME/il-mio-primo-repo.git repo-compagno
+git clone https://github.com/TUO-USERNAME/il-mio-primo-repo.git repo-compagno
 
 cd repo-compagno
 ```
@@ -168,7 +170,7 @@ Dopo che il proprietario ha fatto il merge, il collaboratore deve aggiornare il 
 ### Passo 1 — Aggiungi il repository originale come "upstream"
 
 ```bash
-git remote add upstream git@github.com:COMPAGNO-USERNAME/il-mio-primo-repo.git
+git remote add upstream https://github.com/COMPAGNO-USERNAME/il-mio-primo-repo.git
 ```
 
 ### Passo 2 — Scarica gli aggiornamenti
@@ -189,25 +191,7 @@ Ora il tuo fork, il repository originale e la tua copia locale sono tutti alline
 
 ### Schema del flusso completo
 
-```
-Repository originale (compagno)
-        |
-        | fork
-        v
-Il tuo fork (su GitHub)
-        |
-        | clone
-        v
-La tua copia locale
-        |
-        | branch + commit + push
-        v
-Il tuo fork (aggiornato)
-        |
-        | pull request
-        v
-Repository originale (compagno) ← merge!
-```
+![Collaborazione: Fork, Pull Request e strumenti GitHub](assets/06-collaborazione.svg)
 
 
 ## Parte 6 — Esercizio in coppia (5 min)

@@ -92,6 +92,8 @@ Ecco come funziona il ciclo di lavoro con Git. Memorizza questi tre passaggi:
 3. FAI IL COMMIT          →  Salvi l'istantanea con un messaggio (git commit)
 ```
 
+![Flusso Working Directory → Staging → Local Repository](assets/03-flusso-commit.svg)
+
 ### Passo 1 — Crea il tuo primo file
 
 Creiamo un file README.md. Il README è il "biglietto da visita" di ogni progetto su GitHub.
@@ -250,15 +252,21 @@ Finora il repository esiste solo sul tuo computer. Ora lo pubblichiamo su GitHub
 
 ### Passo 2 — Collega il repository locale a GitHub
 
-GitHub ti mostrerà delle istruzioni. Noi usiamo la sezione "…or push an existing repository from the command line". Nel terminale scrivi:
+GitHub ti mostrerà delle istruzioni. Noi usiamo la sezione "…or push an existing repository from the command line".
+
+> 💡 Prima di copiare il comando, assicurati di selezionare **HTTPS** (non SSH) nella piccola barra sopra i comandi.
+
+Nel terminale scrivi:
 
 ```bash
-git remote add origin git@github.com:TUO-USERNAME/il-mio-primo-repo.git
+git remote add origin https://github.com/TUO-USERNAME/il-mio-primo-repo.git
 ```
 
 Sostituisci `TUO-USERNAME` con il tuo nome utente GitHub.
 
 Questo comando dice a Git: "Il repository remoto si chiama `origin` e si trova a questo indirizzo su GitHub".
+
+![Local Repository → Remote Repository su GitHub](assets/03-local-remote.svg)
 
 ### Passo 3 — Carica i commit su GitHub
 
@@ -274,7 +282,7 @@ Vedrai qualcosa come:
 Enumerating objects: 9, done.
 Counting objects: 100% (9/9), done.
 ...
-To github.com:TUO-USERNAME/il-mio-primo-repo.git
+To https://github.com/TUO-USERNAME/il-mio-primo-repo.git
  * [new branch]      main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 ```
