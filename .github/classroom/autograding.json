@@ -1,0 +1,144 @@
+{
+  "tests": [
+    {
+      "name": "L03 — chi-sono.txt creato",
+      "setup": "",
+      "run": "test -f chi-sono.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "L03 — interessi.md creato",
+      "setup": "",
+      "run": "test -f interessi.md",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "L03 — almeno 3 commit",
+      "setup": "",
+      "run": "[ $(git log --oneline | wc -l) -ge 3 ]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "L04 — .gitignore creato",
+      "setup": "",
+      "run": "test -f .gitignore",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "L04 — appunti.md creato",
+      "setup": "",
+      "run": "test -f appunti.md",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "L04 — file .tmp non tracciati da git",
+      "setup": "touch prova.tmp",
+      "run": "git status --porcelain | grep -v 'prova.tmp' | grep -c '\\.tmp' | grep -q '^0$'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "L05 — progetti.md creato e mergiato in main",
+      "setup": "",
+      "run": "test -f progetti.md",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "L05 — almeno 8 commit",
+      "setup": "",
+      "run": "[ $(git log --oneline | wc -l) -ge 8 ]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "L07 — chi-siamo.md creato",
+      "setup": "",
+      "run": "test -f chi-siamo.md",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "L08 — index.html creato",
+      "setup": "",
+      "run": "test -f index.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "L08 — style.css creato",
+      "setup": "",
+      "run": "test -f style.css",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "L08 — chi-sono.html creato",
+      "setup": "",
+      "run": "test -f chi-sono.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "L08 — progetti.html creato",
+      "setup": "",
+      "run": "test -f progetti.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "L08 — sito pubblicato su GitHub Pages (verifica struttura HTML)",
+      "setup": "",
+      "run": "grep -q '<html' index.html && grep -q '<body' index.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 10
+    }
+  ]
+}
