@@ -2,7 +2,7 @@
 
 **Durata:** 1 ora
 **Obiettivo:** Creare il proprio account GitHub, capire come seguire le lezioni usando GitHub Codespaces (nel browser) oppure VS Code in locale, e fare il fork del repository per iniziare a lavorare.
-
+ 
 ---
 
 ## 🔐 Passo 0 — Crea il tuo account GitHub
