@@ -1,9 +1,9 @@
 # 📘 Lezione 00 – Scegliere il proprio ambiente di lavoro
 
-**Durata:** 1 ora,
+**Durata:** 1 ora
 **Obiettivo:** Creare il proprio account GitHub, capire come seguire le lezioni usando GitHub Codespaces (nel browser) oppure VS Code in locale, e fare il fork del repository per iniziare a lavorare.
 
---- 
+---
 
 ## 🔐 Passo 0 — Crea il tuo account GitHub
 
@@ -35,7 +35,7 @@ Per seguire le lezioni hai bisogno di una **tua copia personale** del repository
 
 ---
 
-## 🖥️ Quale ambiente scegliere? 
+## 🖥️ Quale ambiente scegliere?
 
 Puoi seguire le lezioni in due modi diversi. Scegli quello più adatto alla tua situazione:
 
